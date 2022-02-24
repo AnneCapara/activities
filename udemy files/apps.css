@@ -1,0 +1,142 @@
+h1,
+h2 {
+  text-align: center;
+  font-weight: 400;
+  text-decoration: rgb(193, 32, 207) underline;
+  letter-spacing: 5px;
+  font-size: 50px;
+  font-family: Segoe UI, cursive;
+  background-color: #9cc5a1;
+}
+h3 {
+  font-family: Party LET;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: underline;
+  width: 200px;
+  height: 40px;
+  background-color: #dec0f1;
+  padding-left: 50px;
+}
+p {
+  line-height: 2;
+}
+body {
+  background-color: #fae1dd;
+}
+button {
+  background-color: #72efdd;
+  font-size: 30px;
+  transition: 1s;
+}
+span {
+  color: #ac46a1;
+  font-family: cursive;
+}
+.tag {
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
+footer a {
+  color: #51e5ff;
+}
+/* h3 + p {
+  background-color: #ffc8dd;
+} */
+
+input[type="password"] {
+  color: green;
+}
+
+footer a[href*="/"] {
+  background-color: #9e4770;
+}
+footer a[href*="/"]:hover {
+  border-radius: 90%;
+  color: navajowhite;
+  background-color: black;
+}
+
+a:hover {
+  color: green;
+}
+
+button:hover {
+  background-color: #bdb2ff;
+  border-radius: 50%;
+}
+
+.tag:hover {
+  text-decoration: overline;
+  font-weight: 700;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+#board div {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+  flex-wrap: wrap;
+  transition: ease in;
+}
+
+/* Pseudo classes */
+.square:nth-of-type(2n) {
+  background-color: #2ec4b6;
+}
+
+/* Pseudo element selection */
+::selection {
+  background-color: #72ddf7;
+}
+
+#login {
+  font-family: Party LET;
+}
+
+#signup {
+  font-family: Party LET;
+}
+#cleanser {
+  background-color: #eddcd2;
+  border-width: 3px;
+  border-style: double;
+  border-color: darkmagenta;
+  border-radius: 10%;
+}
+#toner {
+  background-color: #fff1e6;
+  border-width: 3px;
+  border-style: dashed solid;
+  border-color: darkmagenta;
+  border-radius: 10% 25%;
+}
+
+#board:hover {
+  transition: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  background-color: navajowhite;
+  margin-left: 600px;
+  transition-timing-function: ease-out;
+}
+
+#board:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+
+#board:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+#board:nth-of-type(3) {
+  transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@media (max-width: 800px) {
+  h1 {
+    color: #fdc500;
+  }
+}

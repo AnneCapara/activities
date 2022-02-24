@@ -1,0 +1,9 @@
+footer li a {
+  color: black;
+}
+footer a i {
+  color: black;
+}
+footer a i:hover {
+  color: blue;
+}
